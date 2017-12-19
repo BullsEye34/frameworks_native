@@ -1,4 +1,4 @@
-/*
+n/*
  * Copyright 2015 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -1017,7 +1017,7 @@ VkResult CreateSwapchainKHR(VkDevice device,
             return VK_ERROR_SURFACE_LOST_KHR;
         }
     }
-    err = native_window_set_usage(surface.window.get(), uint64_t(gralloc_usage));
+    err = native_window_set_usage(surface.window.get(), int(gralloc_usage));
     if (err != 0) {
         // TODO(jessehall): Improve error reporting. Can we enumerate possible
         // errors and translate them to valid Vulkan result codes?
